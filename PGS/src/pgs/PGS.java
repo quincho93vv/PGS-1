@@ -14,7 +14,6 @@ public class PGS {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             System.out.println(e.getMessage());
         }
-
         SwingUtilities.invokeLater(() -> {
             mostrarInterfaz();
         });
