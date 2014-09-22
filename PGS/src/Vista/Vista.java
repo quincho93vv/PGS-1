@@ -15,7 +15,7 @@ public class Vista extends javax.swing.JFrame {
     public Vista(Controlador c) {
         this.control=c;
         initComponents();
-        Image icon = new ImageIcon(getClass().getResource("/Imagenes/icon.png")).getImage();
+        Image icon = new ImageIcon(getClass().getResource("/imagenes/icon.png")).getImage();
         setIconImage(icon);
          Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
