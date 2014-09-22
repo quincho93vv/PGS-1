@@ -15,11 +15,8 @@ public class PGS {
             System.out.println(e.getMessage());
         }
 
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                mostrarInterfaz();
-            }
+        SwingUtilities.invokeLater(() -> {
+            mostrarInterfaz();
         });
     }
 
