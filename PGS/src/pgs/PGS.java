@@ -15,7 +15,6 @@ public class PGS {
             System.out.println(e.getMessage());
         }
 
-        
         SwingUtilities.invokeLater(() -> {
             mostrarInterfaz();
         });
