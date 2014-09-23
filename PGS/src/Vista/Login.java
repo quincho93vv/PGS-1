@@ -36,8 +36,6 @@ public class Login extends JFrame {
     private void ajustarConfiguracion() {
         this.setSize(300, 300);
         this.setResizable(false);
-        // Image icon = new ImageIcon(getClass().getResource("/Imagenes/2d.png")).getImage();
-        // setIconImage(icon);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         Image icon = new ImageIcon(getClass().getResource("/Imagenes/icon.png")).getImage();
