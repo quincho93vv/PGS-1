@@ -23,7 +23,6 @@ import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.border.AbstractBorder;
 
 public class Login extends JFrame {
 
@@ -147,6 +146,7 @@ public class Login extends JFrame {
             setVisible(false);
 
             java.awt.EventQueue.invokeLater(new Runnable() {
+                @Override
                 public void run() {
                     new Vista(control).setVisible(true);
                 }

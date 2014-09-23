@@ -7,9 +7,13 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 public class IngresarCliente extends javax.swing.JFrame {
-
+    /**
+     * Creates new form IngresarCliente
+     */
     public IngresarCliente(Controlador c) {
+       this.control=c;
         this.control=c;
+
         initComponents();
         Image icon = new ImageIcon(getClass().getResource("/imagenes/icon.png")).getImage();
         setIconImage(icon);
@@ -787,8 +791,9 @@ public class IngresarCliente extends javax.swing.JFrame {
 //        });
 //    }
 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private Controlador control;
+
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jBAddCliente;
     private javax.swing.JCheckBox jCheckActFisica;
@@ -883,5 +888,5 @@ public class IngresarCliente extends javax.swing.JFrame {
     private javax.swing.JTextField jTFTiempoEmb;
     private javax.swing.JTextField jTFTiempoPEmb;
     private javax.swing.JTextField jTFTipoSangre;
-    // End of variables declaration//GEN-END:variables
+   private Controlador control;
 }
