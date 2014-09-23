@@ -31,7 +31,6 @@ public class Vista extends javax.swing.JFrame {
         jbRegistrarCliente = new javax.swing.JButton();
         jbEditarCliente = new javax.swing.JButton();
         jbDesactivarCliente = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
         panel_registro_rutinas = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -99,11 +98,9 @@ public class Vista extends javax.swing.JFrame {
         });
 
         jbDesactivarCliente.setText("Desactivar Cliente");
-
-        jButton8.setText("Registro Fisico del Cliente");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        jbDesactivarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                jbDesactivarClienteActionPerformed(evt);
             }
         });
 
@@ -114,29 +111,25 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(panel_registro_clienteLayout.createSequentialGroup()
                 .addGroup(panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_registro_clienteLayout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(jbRegistrarCliente)
-                        .addGap(53, 53, 53)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(196, 196, 196)
+                        .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(83, 83, 83)
+                        .addComponent(jbEditarCliente))
                     .addGroup(panel_registro_clienteLayout.createSequentialGroup()
-                        .addGap(180, 180, 180)
-                        .addComponent(jbEditarCliente)
-                        .addGap(86, 86, 86)
-                        .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(253, Short.MAX_VALUE))
+                        .addGap(293, 293, 293)
+                        .addComponent(jbRegistrarCliente)))
+                .addContainerGap(266, Short.MAX_VALUE))
         );
         panel_registro_clienteLayout.setVerticalGroup(
             panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_registro_clienteLayout.createSequentialGroup()
-                .addGap(87, 87, 87)
+                .addGap(74, 74, 74)
+                .addComponent(jbRegistrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
                 .addGroup(panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbRegistrarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(68, 68, 68)
-                .addGroup(panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbEditarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(156, Short.MAX_VALUE))
+                    .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbEditarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Registro del Cliente", panel_registro_cliente);
@@ -164,25 +157,25 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
                 .addGroup(panel_registro_rutinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
-                        .addGap(266, 266, 266)
+                        .addGap(251, 251, 251)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
+                        .addGap(84, 84, 84)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
                         .addGap(343, 343, 343)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addContainerGap(248, Short.MAX_VALUE))
         );
         panel_registro_rutinasLayout.setVerticalGroup(
             panel_registro_rutinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
-                .addGap(85, 85, 85)
+                .addGap(97, 97, 97)
                 .addGroup(panel_registro_rutinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(57, 57, 57)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Registro de Rutinas", panel_registro_rutinas);
@@ -509,11 +502,11 @@ public class Vista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbRegistrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbRegistrarClienteActionPerformed
-        new IngresarCliente(control).setVisible(true);
+        new IngresarCliente().setVisible(true);
     }//GEN-LAST:event_jbRegistrarClienteActionPerformed
 
     private void jbEditarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbEditarClienteActionPerformed
-        new IngresarCliente(control).setVisible(true);
+        new IngresarCliente().setVisible(true);
     }//GEN-LAST:event_jbEditarClienteActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -525,12 +518,9 @@ public class Vista extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+        setVisible(false);
+        new ClientesPendientes().setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         new CrearRutina().setVisible(true);
@@ -539,6 +529,11 @@ public class Vista extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         new CrearRutina().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jbDesactivarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDesactivarClienteActionPerformed
+       setVisible(false);
+       new DesactivarCliente().setVisible(true);
+    }//GEN-LAST:event_jbDesactivarClienteActionPerformed
 
     public static void look() {
         try {//com.jtattoo.plaf.aluminium.AluminiumLookAndFeel
@@ -559,7 +554,6 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
