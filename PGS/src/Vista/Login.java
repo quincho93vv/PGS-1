@@ -38,7 +38,7 @@ public class Login extends JFrame {
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        Image icon = new ImageIcon(getClass().getResource("/Imagenes/icon.png")).getImage();
+        Image icon = new ImageIcon(getClass().getResource("/Imagen/icon.png")).getImage();
         setIconImage(icon);
         try {//com.jtattoo.plaf.aero.AeroLookAndFeel
             // com.jtattoo.plaf.aluminium.AluminiumLookAndFeel
@@ -50,7 +50,7 @@ public class Login extends JFrame {
 
     private void ajustarComponentes() {
         this.setLayout(new BorderLayout());
-        setContentPane(new JLabel(new ImageIcon(getClass().getResource("/Imagenes/pesas.jpg"))));
+        setContentPane(new JLabel(new ImageIcon(getClass().getResource("/Imagen/pesas.jpg"))));
 
         this.setLayout(new GridBagLayout());
         conf = new GridBagConstraints();

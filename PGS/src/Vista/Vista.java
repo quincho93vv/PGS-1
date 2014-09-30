@@ -15,18 +15,22 @@ public class Vista extends javax.swing.JFrame {
     public Vista(Controlador c) {
         this.control = c;
         initComponents();
-        Image icon = new ImageIcon(getClass().getResource("/imagenes/icon.png")).getImage();
+        Image icon = new ImageIcon(getClass().getResource("/Imagen/icon.png")).getImage();
         setIconImage(icon);
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);        
         this.setSize(screenSize);
         this.setResizable(false);
+        
+        grupo_sexo.add(rb_masculino);
+        grupo_sexo.add(rb_femenino);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        grupo_sexo = new javax.swing.ButtonGroup();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         panel_inicio = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
@@ -173,6 +177,32 @@ public class Vista extends javax.swing.JFrame {
         panel_menu2 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        panel_datos4 = new javax.swing.JScrollPane();
+        panel_reg_fisico3 = new javax.swing.JPanel();
+        jPanel17 = new javax.swing.JPanel();
+        jTFNombre1 = new javax.swing.JTextField();
+        jLNombre1 = new javax.swing.JLabel();
+        jLDatosPersonales1 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        rb_masculino = new javax.swing.JRadioButton();
+        rb_femenino = new javax.swing.JRadioButton();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jTextField19 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jTextField20 = new javax.swing.JTextField();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jLabel63 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
         panel_control_pagos = new javax.swing.JPanel();
         panel_menu3 = new javax.swing.JPanel();
         jButton6 = new javax.swing.JButton();
@@ -225,7 +255,7 @@ public class Vista extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel17.setText("Bienvenido al Power Gym System");
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo_pesa.png"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/fondo_pesa.png"))); // NOI18N
 
         javax.swing.GroupLayout panel_inicioLayout = new javax.swing.GroupLayout(panel_inicio);
         panel_inicio.setLayout(panel_inicioLayout);
@@ -293,7 +323,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jbEditarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(162, Short.MAX_VALUE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
 
         panel_datos.setBorder(null);
@@ -918,7 +948,7 @@ public class Vista extends javax.swing.JFrame {
         panel_registro_clienteLayout.setVerticalGroup(
             panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panel_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_datos, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
+            .addComponent(panel_datos, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Registro del Cliente", panel_registro_cliente);
@@ -967,7 +997,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
 
         panel_datos1.setBorder(null);
@@ -1311,7 +1341,7 @@ public class Vista extends javax.swing.JFrame {
         panel_crear_rutinaLayout.setHorizontalGroup(
             panel_crear_rutinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_crear_rutinaLayout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
+                .addContainerGap(84, Short.MAX_VALUE)
                 .addGroup(panel_crear_rutinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel50)
@@ -1341,7 +1371,7 @@ public class Vista extends javax.swing.JFrame {
                             .addComponent(jLabel46)
                             .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel47))))
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_crear_rutinaLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton8)
@@ -1453,8 +1483,201 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(219, Short.MAX_VALUE))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
+
+        panel_datos4.setBorder(null);
+
+        panel_reg_fisico.setVisible(false);
+
+        jTFNombre1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFNombre1ActionPerformed(evt);
+            }
+        });
+
+        jLNombre1.setText("Nombre del Perfil");
+
+        jLDatosPersonales1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLDatosPersonales1.setText("Perfil Nutricional");
+
+        jLabel19.setText("Sexo");
+
+        rb_masculino.setText("Masculino");
+        rb_masculino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb_masculinoActionPerformed(evt);
+            }
+        });
+
+        rb_femenino.setText("Femenino");
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel20.setText("Datos del Cliente");
+
+        jLabel21.setText("Peso");
+
+        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField17ActionPerformed(evt);
+            }
+        });
+
+        jLabel22.setText("Kgs.");
+
+        jLabel23.setText("Altura");
+
+        jLabel24.setText("mts.");
+
+        jLabel25.setText("% de Cal de Carbohidratos.");
+
+        jLabel26.setText("%");
+
+        jLabel27.setText("% de Cal de Proteinas.");
+
+        jLabel61.setText("%");
+
+        jLabel62.setText("% de Cal de Grasas.");
+
+        jLabel63.setText("%");
+
+        jButton9.setText("Crear Perfil Nutricional");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap(108, Short.MAX_VALUE)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLabel62)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLabel25)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLabel27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel61)
+                            .addComponent(jLabel63))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLDatosPersonales1)
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLNombre1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel20)
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLabel19)
+                                .addGap(43, 43, 43)
+                                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(rb_femenino)
+                                    .addComponent(rb_masculino))
+                                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel17Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel23)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel24))
+                                    .addGroup(jPanel17Layout.createSequentialGroup()
+                                        .addGap(49, 49, 49)
+                                        .addComponent(jLabel21)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel22)))))
+                        .addContainerGap(125, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton9)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLDatosPersonales1)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLNombre1)
+                    .addComponent(jTFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addComponent(jLabel20)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(rb_masculino)
+                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel21))
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rb_femenino))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel24))))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel61))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel62)
+                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel63))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLDatosPersonales.setFont(new Font("Serif", Font.PLAIN, 18));
+
+        javax.swing.GroupLayout panel_reg_fisico3Layout = new javax.swing.GroupLayout(panel_reg_fisico3);
+        panel_reg_fisico3.setLayout(panel_reg_fisico3Layout);
+        panel_reg_fisico3Layout.setHorizontalGroup(
+            panel_reg_fisico3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_reg_fisico3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(155, Short.MAX_VALUE))
+        );
+        panel_reg_fisico3Layout.setVerticalGroup(
+            panel_reg_fisico3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_reg_fisico3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(115, Short.MAX_VALUE))
+        );
+
+        panel_datos4.setViewportView(panel_reg_fisico3);
 
         javax.swing.GroupLayout panel_registro_nutricionalLayout = new javax.swing.GroupLayout(panel_registro_nutricional);
         panel_registro_nutricional.setLayout(panel_registro_nutricionalLayout);
@@ -1462,11 +1685,14 @@ public class Vista extends javax.swing.JFrame {
             panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_registro_nutricionalLayout.createSequentialGroup()
                 .addComponent(panel_menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 595, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 589, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         panel_registro_nutricionalLayout.setVerticalGroup(
             panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panel_menu2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Registro Nutricional", panel_registro_nutricional);
@@ -1502,7 +1728,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(216, Short.MAX_VALUE))
+                .addContainerGap(150, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panel_control_pagosLayout = new javax.swing.GroupLayout(panel_control_pagos);
@@ -1703,12 +1929,6 @@ public class Vista extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        try {
-            dateChooserCombo2.setDefaultPeriods(new datechooser.model.multiple.PeriodSet());
-        } catch (datechooser.model.exeptions.IncompatibleDataExeption e1) {
-            e1.printStackTrace();
-        }
-
         javax.swing.GroupLayout panel_seguimientosLayout = new javax.swing.GroupLayout(panel_seguimientos);
         panel_seguimientos.setLayout(panel_seguimientosLayout);
         panel_seguimientosLayout.setHorizontalGroup(
@@ -1740,12 +1960,12 @@ public class Vista extends javax.swing.JFrame {
                     .addComponent(label_cliente_seguimiento)
                     .addComponent(combo_nombre_cliente_seguimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panel_seguimientosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(dateChooserCombo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(label_fecha_seguimiento))
+                .addGroup(panel_seguimientosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label_fecha_seguimiento)
+                    .addComponent(dateChooserCombo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Seguimientos", panel_seguimientos);
@@ -1848,6 +2068,22 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jTFNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNombre1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTFNombre1ActionPerformed
+
+    private void rb_masculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_masculinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rb_masculinoActionPerformed
+
+    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField17ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
     public static void look() {
         try {//com.jtattoo.plaf.aluminium.AluminiumLookAndFeel
             javax.swing.UIManager.setLookAndFeel("com.jtattoo.plaf.mcwin.McWinLookAndFeel");
@@ -1861,6 +2097,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JComboBox combo_nombre_cliente_seguimiento;
     private datechooser.beans.DateChooserCombo dateChooserCombo1;
     private datechooser.beans.DateChooserCombo dateChooserCombo2;
+    private javax.swing.ButtonGroup grupo_sexo;
     private javax.swing.JButton jBAddCliente;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -1870,8 +2107,13 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckActFisica;
+    private javax.swing.JCheckBox jCheckActFisica1;
+    private javax.swing.JCheckBox jCheckActFisica2;
+    private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JCheckBox jCheckCBueno;
     private javax.swing.JCheckBox jCheckCExc;
     private javax.swing.JCheckBox jCheckCMBueno;
@@ -1880,27 +2122,71 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckCPesimo;
     private javax.swing.JCheckBox jCheckCRegular;
     private javax.swing.JCheckBox jCheckCirujia;
+    private javax.swing.JCheckBox jCheckCirujia1;
+    private javax.swing.JCheckBox jCheckCirujia2;
     private javax.swing.JCheckBox jCheckColesterol;
+    private javax.swing.JCheckBox jCheckColesterol1;
+    private javax.swing.JCheckBox jCheckColesterol2;
     private javax.swing.JCheckBox jCheckDiabetes;
+    private javax.swing.JCheckBox jCheckDiabetes1;
+    private javax.swing.JCheckBox jCheckDiabetes2;
     private javax.swing.JCheckBox jCheckDiscapacidad;
+    private javax.swing.JCheckBox jCheckDiscapacidad1;
+    private javax.swing.JCheckBox jCheckDiscapacidad2;
     private javax.swing.JCheckBox jCheckEmbarazo;
+    private javax.swing.JCheckBox jCheckEmbarazo1;
+    private javax.swing.JCheckBox jCheckEmbarazo2;
     private javax.swing.JCheckBox jCheckFuma;
+    private javax.swing.JCheckBox jCheckFuma1;
+    private javax.swing.JCheckBox jCheckFuma2;
     private javax.swing.JCheckBox jCheckGastritis;
+    private javax.swing.JCheckBox jCheckGastritis1;
+    private javax.swing.JCheckBox jCheckGastritis2;
     private javax.swing.JCheckBox jCheckHistFam;
+    private javax.swing.JCheckBox jCheckHistFam1;
+    private javax.swing.JCheckBox jCheckHistFam2;
     private javax.swing.JCheckBox jCheckMCaracter;
+    private javax.swing.JCheckBox jCheckMCaracter1;
+    private javax.swing.JCheckBox jCheckMCaracter2;
     private javax.swing.JCheckBox jCheckMusArtNer;
+    private javax.swing.JCheckBox jCheckMusArtNer1;
+    private javax.swing.JCheckBox jCheckMusArtNer2;
     private javax.swing.JCheckBox jCheckObeso;
+    private javax.swing.JCheckBox jCheckObeso1;
+    private javax.swing.JCheckBox jCheckObeso2;
     private javax.swing.JCheckBox jCheckPAudio;
+    private javax.swing.JCheckBox jCheckPAudio1;
+    private javax.swing.JCheckBox jCheckPAudio2;
     private javax.swing.JCheckBox jCheckPColitis;
+    private javax.swing.JCheckBox jCheckPColitis1;
+    private javax.swing.JCheckBox jCheckPColitis2;
     private javax.swing.JCheckBox jCheckPEmo;
+    private javax.swing.JCheckBox jCheckPEmo1;
+    private javax.swing.JCheckBox jCheckPEmo2;
     private javax.swing.JCheckBox jCheckPEspalda;
+    private javax.swing.JCheckBox jCheckPEspalda1;
+    private javax.swing.JCheckBox jCheckPEspalda2;
     private javax.swing.JCheckBox jCheckPMareoVomito;
+    private javax.swing.JCheckBox jCheckPMareoVomito1;
+    private javax.swing.JCheckBox jCheckPMareoVomito2;
     private javax.swing.JCheckBox jCheckPRespiratorio;
+    private javax.swing.JCheckBox jCheckPRespiratorio1;
+    private javax.swing.JCheckBox jCheckPRespiratorio2;
     private javax.swing.JCheckBox jCheckPVista;
+    private javax.swing.JCheckBox jCheckPVista1;
+    private javax.swing.JCheckBox jCheckPVista2;
     private javax.swing.JCheckBox jCheckPostEmb;
+    private javax.swing.JCheckBox jCheckPostEmb1;
+    private javax.swing.JCheckBox jCheckPostEmb2;
     private javax.swing.JCheckBox jCheckPresion;
+    private javax.swing.JCheckBox jCheckPresion1;
+    private javax.swing.JCheckBox jCheckPresion2;
     private javax.swing.JCheckBox jCheckRecMedica;
+    private javax.swing.JCheckBox jCheckRecMedica1;
+    private javax.swing.JCheckBox jCheckRecMedica2;
     private javax.swing.JCheckBox jCheckRehab;
+    private javax.swing.JCheckBox jCheckRehab1;
+    private javax.swing.JCheckBox jCheckRehab2;
     private javax.swing.JCheckBox jCheckSBueno;
     private javax.swing.JCheckBox jCheckSExc;
     private javax.swing.JCheckBox jCheckSMBueno;
@@ -1909,12 +2195,16 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckSPesimo;
     private javax.swing.JCheckBox jCheckSRegular;
     private javax.swing.JLabel jLDatosPersonales;
+    private javax.swing.JLabel jLDatosPersonales1;
     private javax.swing.JLabel jLDireccion;
     private javax.swing.JLabel jLFechaNac;
     private javax.swing.JLabel jLMail;
     private javax.swing.JLabel jLNombre;
+    private javax.swing.JLabel jLNombre1;
     private javax.swing.JLabel jLOcupacion;
     private javax.swing.JLabel jLPadecimientos;
+    private javax.swing.JLabel jLPadecimientos1;
+    private javax.swing.JLabel jLPadecimientos2;
     private javax.swing.JLabel jLTel;
     private javax.swing.JLabel jLTelCelular;
     private javax.swing.JLabel jLTelHabitacion;
@@ -1929,7 +2219,16 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -1956,12 +2255,28 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -1970,7 +2285,9 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -1980,24 +2297,45 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextArea jTAOtro;
+    private javax.swing.JTextArea jTAOtro1;
+    private javax.swing.JTextArea jTAOtro2;
     private javax.swing.JTextField jTFDireccion;
     private javax.swing.JTextField jTFDiscapacidad;
+    private javax.swing.JTextField jTFDiscapacidad1;
+    private javax.swing.JTextField jTFDiscapacidad2;
     private javax.swing.JTextField jTFEnfCronica;
+    private javax.swing.JTextField jTFEnfCronica1;
+    private javax.swing.JTextField jTFEnfCronica2;
     private javax.swing.JTextField jTFHernia;
+    private javax.swing.JTextField jTFHernia1;
+    private javax.swing.JTextField jTFHernia2;
     private javax.swing.JTextField jTFInfoMedico;
     private javax.swing.JTextField jTFLesion;
+    private javax.swing.JTextField jTFLesion1;
+    private javax.swing.JTextField jTFLesion2;
     private javax.swing.JTextField jTFMail;
     private javax.swing.JTextField jTFNombre;
+    private javax.swing.JTextField jTFNombre1;
     private javax.swing.JTextField jTFOcupacion;
     private javax.swing.JTextField jTFPMuscOtro;
+    private javax.swing.JTextField jTFPMuscOtro1;
+    private javax.swing.JTextField jTFPMuscOtro2;
     private javax.swing.JTextField jTFPresion;
+    private javax.swing.JTextField jTFPresion1;
+    private javax.swing.JTextField jTFPresion2;
     private javax.swing.JTextField jTFQuebradura;
+    private javax.swing.JTextField jTFQuebradura1;
+    private javax.swing.JTextField jTFQuebradura2;
     private javax.swing.JTextField jTFTelCelular;
     private javax.swing.JTextField jTFTelEmergencia;
     private javax.swing.JTextField jTFTelHabitacion;
     private javax.swing.JTextField jTFTelTrabajo;
     private javax.swing.JTextField jTFTiempoEmb;
+    private javax.swing.JTextField jTFTiempoEmb1;
+    private javax.swing.JTextField jTFTiempoEmb2;
     private javax.swing.JTextField jTFTiempoPEmb;
+    private javax.swing.JTextField jTFTiempoPEmb1;
+    private javax.swing.JTextField jTFTiempoPEmb2;
     private javax.swing.JTextField jTFTipoSangre;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
@@ -2017,7 +2355,12 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
@@ -2037,15 +2380,23 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JPanel panel_crear_rutina;
     private javax.swing.JScrollPane panel_datos;
     private javax.swing.JScrollPane panel_datos1;
+    private javax.swing.JScrollPane panel_datos2;
+    private javax.swing.JScrollPane panel_datos3;
+    private javax.swing.JScrollPane panel_datos4;
     private javax.swing.JPanel panel_inicio;
     private javax.swing.JPanel panel_menu;
     private javax.swing.JPanel panel_menu1;
     private javax.swing.JPanel panel_menu2;
     private javax.swing.JPanel panel_menu3;
     private javax.swing.JPanel panel_reg_fisico;
+    private javax.swing.JPanel panel_reg_fisico1;
+    private javax.swing.JPanel panel_reg_fisico2;
+    private javax.swing.JPanel panel_reg_fisico3;
     private javax.swing.JPanel panel_registro_cliente;
     private javax.swing.JPanel panel_registro_nutricional;
     private javax.swing.JPanel panel_registro_rutinas;
     private javax.swing.JPanel panel_seguimientos;
+    private javax.swing.JRadioButton rb_femenino;
+    private javax.swing.JRadioButton rb_masculino;
     // End of variables declaration//GEN-END:variables
 }
