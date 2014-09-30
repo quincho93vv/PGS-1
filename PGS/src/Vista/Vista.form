@@ -1176,6 +1176,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="desactivar_Cliente">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="desactivar_Cliente.setVisible(false);"/>
+              </AuxValues>
 
               <Layout>
                 <DimensionLayout dim="0">

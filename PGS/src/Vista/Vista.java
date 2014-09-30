@@ -941,6 +941,8 @@ public class Vista extends javax.swing.JFrame {
 
         panel_datos.setViewportView(panel_reg_fisico);
 
+        desactivar_Cliente.setVisible(false);
+
         cedCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cedClienteActionPerformed(evt);
