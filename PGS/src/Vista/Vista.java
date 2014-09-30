@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.UnsupportedLookAndFeelException;
 import Controlador.Controlador;
 import java.awt.Font;
+import javax.swing.JOptionPane;
 
 public class Vista extends javax.swing.JFrame {
 
@@ -23,7 +24,7 @@ public class Vista extends javax.swing.JFrame {
         this.setResizable(false);
         
         grupo_sexo.add(rb_masculino);
-        grupo_sexo.add(rb_femenino);
+        grupo_sexo.add(rb_femenino1);
     }
 
     @SuppressWarnings("unchecked")
@@ -179,34 +180,33 @@ public class Vista extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         panel_registro_nutricional = new javax.swing.JPanel();
         panel_menu2 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btn_crear_perfil_Nutricional = new javax.swing.JButton();
+        btn_asignar_pNutricional = new javax.swing.JButton();
         panel_datos4 = new javax.swing.JScrollPane();
-        panel_reg_fisico3 = new javax.swing.JPanel();
-        jPanel17 = new javax.swing.JPanel();
-        jTFNombre1 = new javax.swing.JTextField();
-        jLNombre1 = new javax.swing.JLabel();
-        jLDatosPersonales1 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        panel_crear_perfil_nutricional = new javax.swing.JPanel();
+        jTFNombre2 = new javax.swing.JTextField();
+        jLNombre2 = new javax.swing.JLabel();
+        jLDatosPersonales2 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
         rb_masculino = new javax.swing.JRadioButton();
-        rb_femenino = new javax.swing.JRadioButton();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
-        jLabel63 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
+        rb_femenino1 = new javax.swing.JRadioButton();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jTextField22 = new javax.swing.JTextField();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jTextField23 = new javax.swing.JTextField();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jTextField24 = new javax.swing.JTextField();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jTextField25 = new javax.swing.JTextField();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jTextField26 = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
         panel_control_pagos = new javax.swing.JPanel();
         panel_menu3 = new javax.swing.JPanel();
         jButton6 = new javax.swing.JButton();
@@ -329,7 +329,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jbEditarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addContainerGap(191, Short.MAX_VALUE))
         );
 
         panel_datos.setBorder(null);
@@ -1004,12 +1004,12 @@ public class Vista extends javax.swing.JFrame {
         panel_registro_clienteLayout.setVerticalGroup(
             panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panel_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_datos, javax.swing.GroupLayout.DEFAULT_SIZE, 431, Short.MAX_VALUE)
+            .addComponent(panel_datos, javax.swing.GroupLayout.DEFAULT_SIZE, 466, Short.MAX_VALUE)
             .addGroup(panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_registro_clienteLayout.createSequentialGroup()
                     .addGap(159, 159, 159)
                     .addComponent(desactivar_Cliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(160, Short.MAX_VALUE)))
+                    .addContainerGap(195, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("Registro del Cliente", panel_registro_cliente);
@@ -1058,7 +1058,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(218, Short.MAX_VALUE))
         );
 
         panel_datos1.setBorder(null);
@@ -1509,17 +1509,17 @@ public class Vista extends javax.swing.JFrame {
 
         panel_menu2.setBackground(new java.awt.Color(0, 0, 0));
 
-        jButton4.setText("Crear Perfil Nutricional");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn_crear_perfil_Nutricional.setText("Crear Perfil Nutricional");
+        btn_crear_perfil_Nutricional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn_crear_perfil_NutricionalActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Asignar Perfil Nutricional");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btn_asignar_pNutricional.setText("Asignar Perfil Nutricional");
+        btn_asignar_pNutricional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btn_asignar_pNutricionalActionPerformed(evt);
             }
         });
 
@@ -1530,36 +1530,36 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(panel_menu2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel_menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn_asignar_pNutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_crear_perfil_Nutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_menu2Layout.setVerticalGroup(
             panel_menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_menu2Layout.createSequentialGroup()
                 .addGap(101, 101, 101)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_crear_perfil_Nutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(213, Short.MAX_VALUE))
+                .addComponent(btn_asignar_pNutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         panel_datos4.setBorder(null);
 
-        panel_reg_fisico.setVisible(false);
+        panel_crear_perfil_nutricional.setVisible(true);
 
-        jTFNombre1.addActionListener(new java.awt.event.ActionListener() {
+        jTFNombre2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTFNombre1ActionPerformed(evt);
+                jTFNombre2ActionPerformed(evt);
             }
         });
 
-        jLNombre1.setText("Nombre del Perfil");
+        jLNombre2.setText("Nombre del Perfil");
 
-        jLDatosPersonales1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLDatosPersonales1.setText("Perfil Nutricional");
+        jLDatosPersonales2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLDatosPersonales2.setText("Perfil Nutricional");
 
-        jLabel19.setText("Sexo");
+        jLabel52.setText("Sexo");
 
         rb_masculino.setText("Masculino");
         rb_masculino.addActionListener(new java.awt.event.ActionListener() {
@@ -1568,174 +1568,155 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
-        rb_femenino.setText("Femenino");
+        rb_femenino1.setText("Femenino");
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel20.setText("Datos del Cliente");
+        jLabel53.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel53.setText("Datos del Cliente");
 
-        jLabel21.setText("Peso");
+        jLabel54.setText("Peso");
 
-        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+        jTextField22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField17ActionPerformed(evt);
+                jTextField22ActionPerformed(evt);
             }
         });
 
-        jLabel22.setText("Kgs.");
+        jLabel55.setText("Kgs.");
 
-        jLabel23.setText("Altura");
+        jLabel56.setText("Altura");
 
-        jLabel24.setText("mts.");
+        jLabel57.setText("mts.");
 
-        jLabel25.setText("% de Cal de Carbohidratos.");
+        jLabel58.setText("% de Cal de Carbohidratos.");
 
-        jLabel26.setText("%");
+        jLabel59.setText("%");
 
-        jLabel27.setText("% de Cal de Proteinas.");
+        jLabel60.setText("% de Cal de Proteinas.");
 
-        jLabel61.setText("%");
+        jLabel64.setText("%");
 
-        jLabel62.setText("% de Cal de Grasas.");
+        jLabel65.setText("% de Cal de Grasas.");
 
-        jLabel63.setText("%");
+        jLabel66.setText("%");
 
-        jButton9.setText("Crear Perfil Nutricional");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        jButton11.setText("Crear Perfil Nutricional");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                jButton11ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
-                .addContainerGap(108, Short.MAX_VALUE)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel62)
+        javax.swing.GroupLayout panel_crear_perfil_nutricionalLayout = new javax.swing.GroupLayout(panel_crear_perfil_nutricional);
+        panel_crear_perfil_nutricional.setLayout(panel_crear_perfil_nutricionalLayout);
+        panel_crear_perfil_nutricionalLayout.setHorizontalGroup(
+            panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                        .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                                .addComponent(jLabel65)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel25)
+                                .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                                .addComponent(jLabel58)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel27)
+                                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                                .addComponent(jLabel60)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel61)
-                            .addComponent(jLabel63))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLDatosPersonales1)
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLNombre1)
+                        .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel59)
+                            .addComponent(jLabel64)
+                            .addComponent(jLabel66))
+                        .addGap(109, 109, 109))
+                    .addComponent(jLDatosPersonales2)
+                    .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                        .addComponent(jLNombre2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTFNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel53)
+                    .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                        .addComponent(jLabel52)
+                        .addGap(43, 43, 43)
+                        .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rb_femenino1)
+                            .addComponent(rb_masculino))
+                        .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel56)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel57))
+                            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(jLabel54)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel20)
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel19)
-                                .addGap(43, 43, 43)
-                                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rb_femenino)
-                                    .addComponent(rb_masculino))
-                                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel17Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel23)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel24))
-                                    .addGroup(jPanel17Layout.createSequentialGroup()
-                                        .addGap(49, 49, 49)
-                                        .addComponent(jLabel21)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel22)))))
-                        .addContainerGap(125, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton9)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel55))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_crear_perfil_nutricionalLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(293, Short.MAX_VALUE))
         );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
+        panel_crear_perfil_nutricionalLayout.setVerticalGroup(
+            panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLDatosPersonales1)
+                .addComponent(jLDatosPersonales2)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLNombre1)
-                    .addComponent(jTFNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLNombre2)
+                    .addComponent(jTFNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
-                .addComponent(jLabel20)
+                .addComponent(jLabel53)
                 .addGap(27, 27, 27)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
                     .addComponent(rb_masculino)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel21))
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
+                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel55)
+                    .addComponent(jLabel54))
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rb_femenino))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addComponent(rb_femenino1))
+                    .addGroup(panel_crear_perfil_nutricionalLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel24))))
+                        .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel57))))
                 .addGap(30, 30, 30)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel26))
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel58)
+                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel59))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27)
-                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel61))
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel60)
+                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel64))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel62)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel63))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panel_crear_perfil_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel65)
+                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel66))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jLDatosPersonales.setFont(new Font("Serif", Font.PLAIN, 18));
 
-        javax.swing.GroupLayout panel_reg_fisico3Layout = new javax.swing.GroupLayout(panel_reg_fisico3);
-        panel_reg_fisico3.setLayout(panel_reg_fisico3Layout);
-        panel_reg_fisico3Layout.setHorizontalGroup(
-            panel_reg_fisico3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_reg_fisico3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(155, Short.MAX_VALUE))
-        );
-        panel_reg_fisico3Layout.setVerticalGroup(
-            panel_reg_fisico3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_reg_fisico3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(243, Short.MAX_VALUE))
-        );
-
-        panel_datos4.setViewportView(panel_reg_fisico3);
+        panel_datos4.setViewportView(panel_crear_perfil_nutricional);
 
         javax.swing.GroupLayout panel_registro_nutricionalLayout = new javax.swing.GroupLayout(panel_registro_nutricional);
         panel_registro_nutricional.setLayout(panel_registro_nutricionalLayout);
@@ -1744,13 +1725,13 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(panel_registro_nutricionalLayout.createSequentialGroup()
                 .addComponent(panel_menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
+                .addComponent(panel_datos4)
                 .addGap(0, 0, 0))
         );
         panel_registro_nutricionalLayout.setVerticalGroup(
             panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panel_menu2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 431, Short.MAX_VALUE)
+            .addComponent(panel_datos4)
         );
 
         jTabbedPane1.addTab("Registro Nutricional", panel_registro_nutricional);
@@ -1786,7 +1767,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(210, Short.MAX_VALUE))
+                .addContainerGap(245, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panel_control_pagosLayout = new javax.swing.GroupLayout(panel_control_pagos);
@@ -2070,13 +2051,14 @@ public class Vista extends javax.swing.JFrame {
         //cargar datos de registro del cliente
     }//GEN-LAST:event_jbEditarClienteActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void btn_crear_perfil_NutricionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_crear_perfil_NutricionalActionPerformed
+        panel_crear_perfil_nutricional.setVisible(true);
+        panel_crear_perfil_nutricional.paintComponents(panel_crear_perfil_nutricional.getGraphics());
+    }//GEN-LAST:event_btn_crear_perfil_NutricionalActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btn_asignar_pNutricionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_asignar_pNutricionalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btn_asignar_pNutricionalActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         setVisible(false);
@@ -2089,7 +2071,8 @@ public class Vista extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new CrearRutina().setVisible(true);
+        panel_crear_rutina.setVisible(true);
+        panel_crear_rutina.paintComponents(panel_crear_rutina.getGraphics());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jbDesactivarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDesactivarClienteActionPerformed
@@ -2128,24 +2111,8 @@ public class Vista extends javax.swing.JFrame {
     }//GEN-LAST:event_jBAddClienteActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+       //Pane para buscar numero de cedula...
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jTFNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNombre1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTFNombre1ActionPerformed
-
-    private void rb_masculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_masculinoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rb_masculinoActionPerformed
-
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
 
     private void cedClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cedClienteActionPerformed
         // TODO add your handling code here:
@@ -2154,6 +2121,22 @@ public class Vista extends javax.swing.JFrame {
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jTFNombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNombre2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTFNombre2ActionPerformed
+
+    private void rb_masculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_masculinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rb_masculinoActionPerformed
+
+    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     public static void look() {
         try {//com.jtattoo.plaf.aluminium.AluminiumLookAndFeel
@@ -2165,6 +2148,8 @@ public class Vista extends javax.swing.JFrame {
 
     private Controlador control;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_asignar_pNutricional;
+    private javax.swing.JButton btn_crear_perfil_Nutricional;
     private javax.swing.JTextField cedCliente;
     private javax.swing.JComboBox combo_nombre_cliente_seguimiento;
     private datechooser.beans.DateChooserCombo dateChooserCombo1;
@@ -2174,14 +2159,12 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JButton jBAddCliente;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckActFisica;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckCBueno;
@@ -2221,12 +2204,12 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckSPesimo;
     private javax.swing.JCheckBox jCheckSRegular;
     private javax.swing.JLabel jLDatosPersonales;
-    private javax.swing.JLabel jLDatosPersonales1;
+    private javax.swing.JLabel jLDatosPersonales2;
     private javax.swing.JLabel jLDireccion;
     private javax.swing.JLabel jLFechaNac;
     private javax.swing.JLabel jLMail;
     private javax.swing.JLabel jLNombre;
-    private javax.swing.JLabel jLNombre1;
+    private javax.swing.JLabel jLNombre2;
     private javax.swing.JLabel jLOcupacion;
     private javax.swing.JLabel jLPadecimientos;
     private javax.swing.JLabel jLTel;
@@ -2243,16 +2226,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -2280,16 +2254,24 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JRadioButton jRBNo;
@@ -2315,7 +2297,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JTextField jTFLesion;
     private javax.swing.JTextField jTFMail;
     private javax.swing.JTextField jTFNombre;
-    private javax.swing.JTextField jTFNombre1;
+    private javax.swing.JTextField jTFNombre2;
     private javax.swing.JTextField jTFOcupacion;
     private javax.swing.JTextField jTFPMuscOtro;
     private javax.swing.JTextField jTFPresion;
@@ -2345,12 +2327,12 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
@@ -2367,6 +2349,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel label_fecha_seguimiento;
     private javax.swing.JPanel pane_otros;
     private javax.swing.JPanel panel_control_pagos;
+    private javax.swing.JPanel panel_crear_perfil_nutricional;
     private javax.swing.JPanel panel_crear_rutina;
     private javax.swing.JScrollPane panel_datos;
     private javax.swing.JScrollPane panel_datos1;
@@ -2378,12 +2361,11 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JPanel panel_menu2;
     private javax.swing.JPanel panel_menu3;
     private javax.swing.JPanel panel_reg_fisico;
-    private javax.swing.JPanel panel_reg_fisico3;
     private javax.swing.JPanel panel_registro_cliente;
     private javax.swing.JPanel panel_registro_nutricional;
     private javax.swing.JPanel panel_registro_rutinas;
     private javax.swing.JPanel panel_seguimientos;
-    private javax.swing.JRadioButton rb_femenino;
+    private javax.swing.JRadioButton rb_femenino1;
     private javax.swing.JRadioButton rb_masculino;
     // End of variables declaration//GEN-END:variables
 }
