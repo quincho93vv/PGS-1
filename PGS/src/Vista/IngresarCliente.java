@@ -729,6 +729,15 @@ public class IngresarCliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jBAddClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAddClienteActionPerformed
+        setVisible(false);
+        new RegistroFisicoCliente().setVisible(true);
+    }//GEN-LAST:event_jBAddClienteActionPerformed
+
+    private void jRBYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBYesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRBYesActionPerformed
+
     private void jTFTelHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFTelHabitacionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTFTelHabitacionActionPerformed
@@ -748,15 +757,6 @@ public class IngresarCliente extends javax.swing.JFrame {
     private void jTFTiempoPEmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFTiempoPEmbActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTFTiempoPEmbActionPerformed
-
-    private void jRBYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBYesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRBYesActionPerformed
-
-    private void jBAddClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAddClienteActionPerformed
-        setVisible(false);
-        new RegistroFisicoCliente().setVisible(true);
-    }//GEN-LAST:event_jBAddClienteActionPerformed
 
     /**
      * @param args the command line arguments
